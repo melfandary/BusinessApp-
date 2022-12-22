@@ -1,3 +1,108 @@
-body{
-background-color: #333;
+:root {
+  --color_red: #891414;
+  --color_green: #39d283;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav {
+  display: block;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  margin: 0;
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  background-color: #333;
+}
+
+nav ul li {
+  display: inline-flex;
+  padding: 0.3em;
+  border: 0.1em var(--color_green) solid;
+  border-radius: 30px;
+  margin-right: 0.3em;
+}
+/*sections*/
+
+section{
+  margin:0;
+  
+}
+
+.sections_container{
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+
+
+.home_img {
+  width: 100%;
+  max-height: 50vh;
+  margin: 0;
+ 
+}
+
+/*info section*/
+.info_section {
+
+  text-align: center;
+  background-color: var(--color_green);
+}
+
+.info_section h2 {
+  margin-top: 0;
+
+  margin-bottom: 0;
+}
+
+.info_section p {
+  margin: 2em 2em 0.2em 2em;
+}
+
+/*section 3*/
+
+.section_3 {
+  display: flex;
+  border: 3px solid #121111;
+  box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.section_3_left {
+  float: left;
+  border-right: 0.1em solid #363534;
+}
+.section_3_left button {
+  border: none;
+  border-bottom: 2px solid grey;
+  margin: 0.4rem;
+  font-size: 1.2em;
+  display: block;
+}
+
+.section_3_right {
+  float: right;
+  border-radius: 2%;
+  text-align: center;
+}
+
+/* footer */
+
+footer nav li {
+  display: block;
+  width: 15%;
 }
