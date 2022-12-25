@@ -7,83 +7,91 @@
     <title>Index</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>Index</li>
-        <li>lorem</li>
-        <li>ipsum</li>
-        <li>lorem</li>
-      </ul>
+    <nav class="top_nav">
+      <div id="nav_links">
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a href="#">lorem</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">lorem</a></li>
+        </ul>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="expandNavbar()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
 
+
     <div class="sections_container">
+      <img class="home_img" src="images/plane.jpg" />
 
-      <img class="home_img" src="images/workers.jpg"/>
-    
+      <section class="info_section">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic od sit
+          tempore.
+        </h2>
 
-    <section class="info_section">
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic od sit
-        tempore.
-      </h2>
-
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit facilis
-        magni blanditiis necessitatibus quis, exercitationem voluptas itaque
-        voluptatem maiores ullam dolores mollitia quisquam fugit consequuntur
-        consequatur aut quae dignissimos nobis! Cupiditate consectetur
-        reprehenderit non debitis! Quae sunt unde animi neque magni autem hic
-        odio, porro assumenda ullam tempora dolorum fugit. Consectetur labore
-        veritatis amet eum quasi magni voluptatibus beatae repellendus. Quidem
-        optio amet temporibus voluptate modi excepturi, beatae vero, id
-        expedita, tenetur nobis. Culpa aspernatur autem, necessitatibus, sunt
-        nobis, laudantium recusandae nulla ab laborum provident quasi enim
-        voluptatibus est at.
-      </p>
-      <br />
-    </section>
-    <section class="section_3">
-      <div class="section_3_left">
-        <button>lorem</button>
-        <button>ipsum</button>
-        <button>dolor</button>
-        <button>ipsum</button>
-      </div>
-
-      <div class="section_3_right">
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ullam,
-          autem tempore quod, corrupti unde nihil nostrum dignissimos ipsa
-          voluptatibus nam, in maxime perspiciatis pariatur iusto eum delectus
-          dicta deleniti.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+          facilis magni blanditiis necessitatibus quis, exercitationem voluptas
+          itaque voluptatem maiores ullam dolores mollitia quisquam fugit
+          consequuntur consequatur aut quae dignissimos nobis! Cupiditate
+          consectetur reprehenderit non debitis! Quae sunt unde animi neque
+          magni autem hic odio, porro assumenda ullam tempora dolorum fugit.
+          Consectetur labore veritatis amet eum quasi magni voluptatibus beatae
+          repellendus. Quidem optio amet temporibus voluptate modi excepturi,
+          beatae vero, id expedita, tenetur nobis. Culpa aspernatur autem,
+          necessitatibus, sunt nobis, laudantium recusandae nulla ab laborum
+          provident quasi enim voluptatibus est at.
         </p>
-      </div>
-    </section>
+        <br />
+      </section>
+      <section class="section_3">
+        <div class="section_3_left">
+          <button id="info1_button" onclick="display_info1()">lorem</button>
+          <button id="info2_button" onclick="display_info2()">ipsum</button>
+          <button id="info3_button">dolor</button>
+          <button id="info4_button">ipsum</button>
+        </div>
 
-    <section class="section_4">
-      <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic od sit
-        tempore.
-      </h2>
+        <div class="section_3_right">
+          <p id="section3_text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ullam,
+            autem tempore quod.
+          </p>
+      
+        </div>
+      </section>
 
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit facilis
-        magni blanditiis necessitatibus quis, exercitationem voluptas itaque
-        voluptatem maiores ullam dolores mollitia quisquam fugit consequuntur
-        consequatur aut quae dignissimos nobis! Cupiditate consectetur
-        reprehenderit non debitis! Quae sunt unde animi neque magni autem hic
-        odio, porro assumenda ullam tempora dolorum fugit. Consectetur labore
-        veritatis amet eum quasi magni voluptatibus beatae repellendus. Quidem
-        optio amet temporibus voluptate modi excepturi, beatae vero, id
-        expedita, tenetur nobis. Culpa aspernatur autem, necessitatibus, sunt
-        nobis, laudantium recusandae nulla ab laborum provident quasi enim
-        voluptatibus est at.
-      </p>
-      <br />
-    </section>
-  </div>
+      <section class="section_4">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic od sit
+          tempore.
+        </h2>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+          facilis magni blanditiis necessitatibus quis, exercitationem voluptas
+          itaque voluptatem maiores ullam dolores mollitia quisquam fugit
+          consequuntur consequatur aut quae dignissimos nobis! Cupiditate
+          consectetur reprehenderit non debitis! Quae sunt unde animi neque
+          magni autem hic odio, porro assumenda ullam tempora dolorum fugit.
+          Consectetur labore veritatis amet eum quasi magni voluptatibus beatae
+          repellendus. Quidem optio amet temporibus voluptate modi excepturi,
+          beatae vero, id expedita, tenetur nobis. Culpa aspernatur autem,
+          necessitatibus, sunt nobis, laudantium recusandae nulla ab laborum
+          provident quasi enim voluptatibus est at.
+        </p>
+        <br />
+      </section>
+    </div>
+    <script src="index.js"></script>
   </body>
 
   <footer>
