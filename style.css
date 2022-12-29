@@ -1,6 +1,7 @@
 :root {
   --color_main: #55b2d3;
   --color_secondary: #f0933c;
+  --color_grey: #878e99;
 }
 
 body {
@@ -10,8 +11,13 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/*navbar*/
 nav ul {
   text-decoration: none;
+}
+
+.top_nav {
+  border-bottom: 2px solid var(--color_secondary);
 }
 
 .top_nav #nav_links {
@@ -85,7 +91,6 @@ section {
 
 .info_section h2 {
   margin-top: 0;
-
   margin-bottom: 0;
 }
 
@@ -99,6 +104,7 @@ section {
   display: flex;
   border: 3px solid #121111;
   box-shadow: 1px 4px 20px rgba(0, 0, 0, 0.5);
+   
 }
 
 .section_3_left {
@@ -107,7 +113,7 @@ section {
 }
 .section_3_left button {
   border: none;
-  border-bottom: 2px solid grey;
+  border-bottom: 2px solid var(--color_secondary);
   margin: 0.4rem;
   font-size: 1.2em;
   display: block;
@@ -119,14 +125,36 @@ section {
   text-align: center;
 }
 
+/*cards section*/
+
+.card_section {
+  background-color: var(--color_main);
+}
+.cards_container {
+  display: flex;
+}
+.card {
+  border: 1px solid black;
+  text-align: center;
+  min-height: 13em;
+  width: 25vw;
+}
 /* footer */
 
-footer nav li {
-  display: block;
-  width: 15%;
+footer hr {
+  width: 90vw;
+  border-top: 0.3em solid #333;
+  color: #333;
+  margin: 2em;
 }
 
-@media only screen and (min-width: 600px) {
+.footer_nav {
+  color: var(--color_grey);
+}
+
+.footer_nav li {
+  display: block;
+  width: 15%;
 }
 
 @media only screen and (max-width: 1080px) {

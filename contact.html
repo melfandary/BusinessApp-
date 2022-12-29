@@ -7,6 +7,7 @@
     <title>contact</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contact.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -29,39 +30,64 @@
         </a>
       </nav>
 
-    <div>
+    <div class="form_container">
         <form onSubmit="">
           <div class="form_section">
-            <h2>Contact form</h2>
+            <h2>Send Your Message</h2>
           </div>
-  
+
           <div class="form_section">
-            <label>Username :</label>
+            <!-- <label for="name">Full name :</label> -->
             <input
               type="text"
-              placeholder="enter your username"
-              id="username"
+              placeholder="  enter your name."
+              id="name"
             ></input>
-            <br>
+           
           </div>
+
+
+  
           <div class="form_section">
-            <label>comment :</label>
+            <!-- <label for="email">E-mail :</label> -->
+            <input
+              type="text"
+              placeholder="  enter your e-mail."
+              id="email"
+            ></input>
+           
+          </div>
+
+          <div class="form_section">
+            <!-- <label for="phone_num">Phone :</label> -->
+            <input
+             type="text"
+             placeholder="  enter your phone number."
+             id="phone_num"
+            ></input>
+    
+          </div>
+
+
+
+          <div class="form_section">
+            <!-- <label for="comment">Comment :</label> -->
             <textarea
                rows="1"
-               
+               cols="50"
               type="text"
-              placeholder="type here..."
+              placeholder="  type message here..."
               id="comment"
             ></textarea>
           </div>
   
           <div class="form_section">
-            <button type="submit">Login</button>
+            <button type="submit"> <strong>Submit</strong> </button>
           </div>
         </form>
       </div>
 
-
+ <script src="index.js"></script>
   </body>
 
   <footer></footer>
